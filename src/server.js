@@ -28,5 +28,4 @@ server
 
 
 // server init
-server.listen(5500)
-console.log("Server status: online!")
+server.listen(process.env.PORT || 3000)
