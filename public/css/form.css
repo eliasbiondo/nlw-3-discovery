@@ -1,0 +1,165 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+fieldset {
+  border: none;
+}
+
+fieldset + fieldset {
+  margin-top: 6.4rem;
+}
+
+fieldset legend {
+  width: 100%;
+  color: #4d6f80;
+  font-size: 3.2rem;
+  line-height: 3.4rem;
+  font-weight: bold;
+  padding-bottom: 2.4rem;
+  border-bottom: 1px solid #d3e2e5;
+}
+
+.input-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-block input:valid, .input-block textarea:valid{
+  border: 1px solid #A1E9C5;
+}
+
+label {
+  margin-top: 2.4rem;
+  margin-bottom: 0.8rem;
+  color: #8fa7b2;
+}
+
+.input-block label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.8rem;
+  color: #8fa7b2;
+}
+
+.input-block label span {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-left: 2rem;
+  color: #8fa7b2;
+}
+
+input,
+textarea {
+  width: 100%;
+  height: 6.4rem;
+  color: #5c8599;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2.8rem;
+  padding: 1.8rem 2.6rem;
+  background-color: #f5f8fa;
+  border: 1px solid #d3e2e5;
+  border-radius: 2rem;
+  outline: none;
+}
+
+input::placeholder {
+  color: #8FA7B2;
+}
+
+.image-upload {
+  position: relative;
+  margin-top: 1.2rem;
+}
+
+.image-upload span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 1rem;
+  bottom: 1.5rem;
+  width: 3.8rem;
+  height: 3.8rem;
+  border-radius: 1rem;
+  border: 1px solid #D3E2E5;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.image-upload span:hover {
+  background-color: rgb(248, 248, 248);
+}
+
+#about, #instructions {
+  height: 21rem;
+  resize: none;
+}
+
+.new-image-link {
+  width: 100%;
+  height: 6.4rem;
+  margin-top: 1.2rem;
+  background-color: #F5F8FA;
+  border: 1px dashed #96D2F0;
+  border-radius: 2rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.new-image-link:hover {
+  background-color:#ebf1f5;
+}
+
+
+fieldset + fieldset legend {
+  margin-bottom: 1.6rem;
+}
+
+.input-block.weekend-friendly {
+  margin-bottom: 6.4rem;;
+}
+
+.weekend-friendly-choose-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.weekend-friendly-choose-buttons button {
+  height: 6.4rem;
+  cursor: pointer;
+  color: #5C8599;
+  font-size: 1.9rem;
+  background-color: #f5f8fa;
+  border: 1px solid #d3e2e5;
+  outline: none;
+
+}
+
+.weekend-friendly-choose-buttons button:first-child {
+  border-radius: 2rem 0rem 0rem 2rem;
+}
+
+.weekend-friendly-choose-buttons button + button {
+  border-radius: 0rem 2rem 2rem 0rem;
+}
+
+.weekend-friendly-choose-buttons button.active {
+  color: #37C77F;
+  border: 1px solid #A1E9C5;
+  background-color: #EDFFF6;
+}
+
+.weekend-friendly-choose-buttons button.active.notweekendfriendly {
+  color: #FF669D;
+  border: 1px solid #FFBCD4;
+  background-color: #FCF0F4;
+}

@@ -1,0 +1,49 @@
+/* Animations */
+
+@keyframes up {
+  from {
+    opacity: 0;
+    transform: translateY(2.5rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+}
+
+@keyframes apper {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes to-right {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0rem);
+  }
+}
+
+.animate-up {
+  animation-name: up;
+  animation-duration: 1s;
+  animation-fill-mode: backwards;
+}
+
+.animate-to-right {
+  animation-name: to-right;
+  animation-duration: 500ms;
+  animation-fill-mode: backwards;
+}
+
+.animate-apper {
+  animation-name: apper;
+  animation-duration: 1.5s;
+  animation-fill-mode: backwards;
+}

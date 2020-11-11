@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <title>Adicionar um orfanato | Happy</title>
+
+    <!-- Leaflet Start Code -->
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+
+    <!-- Leaflet End Code -->
+
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/sidebar.css" />
+    <link rel="stylesheet" href="/css/buttons.css" />
+    <link rel="stylesheet" href="/css/form.css" />
+    <link rel="stylesheet" href="/css/page-add-orphanage.css" />
+    <link rel="stylesheet" href="/css/animations.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+    />
+    <link rel="icon" href="/images/logo-icon.png" />
+  </head>
+  <body>
+    <div id="page-add-orphanage">
+      <aside class="animate-to-right sidebar">
+        <a href="./index">
+            <img src="/images/map-marker.svg" alt="Logo" />
+        </a>
+        <button onclick="history.back()">
+          <img src="/images/arrow-back.svg" />
+        </button>
+      </aside>
+      <main class="animate-apper">
+        <div class="add-orphanage-box">
+          <div class="add-orphanage-box-content">
+            <form class="add-orphanage-form" action="save-orphanage" method="POST">
+              <fieldset>
+                <legend>Dados</legend>
+
+                <div class="map-container">
+                  <div id="mapid"></div>
+                  <div class="map-text">
+                    <a href="#">Clique no mapa para adicionar a localização</a>
+                  </div>
+                  <input type="hidden" name="lat" id="lat" value="">
+                  <input type="hidden" name="lng" id="lng" value="">
+                </div>
+
+
+                <div class="input-block">
+                  <label for="name">Nome</label>
+                  <input id="name" name="name" required/>
+                </div>
+
+                <div class="input-block">
+                  <label for="about"
+                    >Sobre <span>(No máximo 300 caracteres)</span>
+                  </label>
+                  <textarea maxlength="300" id="about" name="about" required></textarea>
+                </div>
+
+                <div class="input-block">
+                  <label for="whatsappNumber">Número do WhatsApp</label>
+                  <input
+                    id="whatsappNumber"
+                    name="whatsappNumber"
+                    type="number"
+                    required
+                  />
+                </div>
+
+                <div class="input-block image-section">
+                    <label for="images">Fotos</label>
+                    
+                    <div class="image-upload">
+                        <input type="url" name="images" placeholder="Insira o link da imagem aqui" required>
+                        <span onclick="removeLink(event)"> <img src="/images/close-icon.svg" alt="Excluir imagem"> </span>
+                    </div>
+                  </div>
+
+                  <button onclick="addNewImage()" type="button" class="new-image-link">
+                    <img src="/images/blue-plus.svg" alt="Adicionar uma nova imagem">
+                  </button>
+
+              </fieldset>
+
+              <fieldset>
+                <legend>Visitação</legend>
+
+                <div class="input-block">
+                    <label for="instructions"
+                      >Instruções <span>(No máximo 300 caracteres)</span>
+                    </label>
+                    <textarea maxlength="300" id="instructions" name="instructions" required></textarea>
+                </div>
+                
+                <div class="input-block">
+                    <label for="visiting-hours">Horários de visita</label>
+                    <input id="visiting-hours" name="visiting-hours" placeholder="Ex.: Das 08:00h às 18:00h"required/>
+                </div>
+
+                <div class="input-block weekend-friendly">
+                    <label>Atende aos fins de semana?</label>
+                    <input type="hidden" id="weekend-friendly" name="weekend-friendly" value="1">
+
+                    <div class="weekend-friendly-choose-buttons">
+                        <button onclick="weekendFriendlyChooseOption(event)" type="button" class="active" value="1">Sim</button>
+                        <button onclick="weekendFriendlyChooseOption(event)" type="button" class="notweekendfriendly" value="0">Não</button>
+                    </div>
+                    
+                </div>
+
+                <button type="submit" class="primary-button">Confirmar</button>
+
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="/scripts/page-add-orphanage.js"></script>
+  </body>
+</html>

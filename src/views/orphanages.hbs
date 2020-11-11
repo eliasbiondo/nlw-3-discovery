@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Localize um orfanato | Happy</title>
+
+  <!-- Leaflet Start Code -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+
+  <!-- Leaflet End Code -->
+
+  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="stylesheet" href="/css/page-orphanages.css" />
+  <link rel="stylesheet" href="/css/animations.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" />
+  <link rel="icon" href="/images/logo-icon.png" />
+</head>
+
+<body>
+  <div id="page-orphanages">
+    <aside class="animate-to-right">
+      <div class="aside-content">
+        <header>
+          <img src="/images/map-marker.svg" alt="Logo" />
+          <div class="text-box">
+            <h2>Escolha um orfanato no mapa</h2>
+            <p>Muitas crianças estão esperando a sua visita :)</p>
+          </div>
+        </header>
+        <footer>
+          <strong class="city">Londrina</strong>
+          <p class="state">Paraná</p>
+        </footer>
+      </div>
+    </aside>
+    <div class="animate-apper" id="mapid"></div>
+
+  <div class="orphanages">
+    
+    
+    {{#each orphanages}}
+
+      <span 
+      
+        hidden 
+        data-id="{{this.id}}" 
+        data-name="{{this.name}}" 
+        data-lat="{{this.lat}}" 
+        data-lng="{{this.lng}}">
+        
+      </span>
+
+    {{/each}}
+
+  </div>
+
+    
+    <a href="add-orphanage" class="add-orphanage" title="Adicionar um orfanato">
+      <img src="/images/plus.svg" alt="Adicionar um orfanato" />
+    </a>
+  </div>
+  <script src="/scripts/page-orphanages.js"></script>
+</body>
+
+</html>

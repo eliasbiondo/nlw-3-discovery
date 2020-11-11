@@ -1,0 +1,19 @@
+/* Default reset */
+
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font: 400 2.4rem/1 "Nunito", sans-serif;
+  color: white;
+}
+
+/* Main CSS */
+
+body {
+  height: 100vh;
+}
