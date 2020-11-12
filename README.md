@@ -1,6 +1,5 @@
-![](https://github.com/rocketseat-education/nlw-03-discovery/raw/main/.github/happy.png)
-
 # 👦 nlw-3-discovery | Happy 
+
 Happy is a web application that aims to connect people with multiple Children's Homes, providing information about visiting hours, addresses and contact numbers. Note: this project is for study purposes only. It's not a real and active social-project (unfortunatelly). You can access the deployed website  [clicking here](https://nlw-3-discovery.herokuapp.com/).
 
 ## 🚀 Technologies
