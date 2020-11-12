@@ -1,6 +1,8 @@
 # 👦 nlw-3-discovery | Happy 
 
-![](https://i.imgur.com/x3jxxX1.png)
+![](https://img.shields.io/github/followers/eliasbiondo?style=social) ![](https://img.shields.io/github/stars/eliasbiondo?style=social) ![](https://img.shields.io/github/languages/code-size/eliasbiondo/nlw-3-discovery?style=social) ![](https://img.shields.io/github/languages/count/eliasbiondo/nlw-3-discovery?style=social) ![](https://img.shields.io/website?down_color=critical&down_message=offline&up_color=brightgreen&up_message=online&url=https%3A%2F%2Fnlw-3-discovery.herokuapp.com%2F)
+
+![](https://i.imgur.com/x3jxxX1.png) 
 
 Happy is a web application that aims to connect people with multiple Children's Homes, providing information about visiting hours, addresses and contact numbers. Note: this project is for study purposes only. It's not a real and active social-project (unfortunatelly). You can access the deployed website  [clicking here](https://nlw-3-discovery.herokuapp.com/).
 
