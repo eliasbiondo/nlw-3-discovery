@@ -1,6 +1,6 @@
 # 👦 nlw-3-discovery | Happy 
 
-![](https://img.shields.io/github/followers/eliasbiondo?style=social) ![](https://img.shields.io/github/stars/eliasbiondo?style=social) ![](https://img.shields.io/github/languages/code-size/eliasbiondo/nlw-3-discovery?style=social) ![](https://img.shields.io/github/languages/count/eliasbiondo/nlw-3-discovery?style=social) ![](https://img.shields.io/website?down_color=critical&down_message=offline&up_color=brightgreen&up_message=online&url=https%3A%2F%2Fnlw-3-discovery.herokuapp.com%2F)
+![](https://img.shields.io/github/followers/eliasbiondo?style=social) ![](https://img.shields.io/github/stars/eliasbiondo?style=social) ![](https://img.shields.io/github/languages/code-size/eliasbiondo/nlw-3-discovery?style=social) ![](https://img.shields.io/github/languages/count/eliasbiondo/nlw-3-discovery?style=social) <a href="https://nlw-3-discovery.herokuapp.com/" target="_blank">![](https://img.shields.io/website?down_color=critical&down_message=offline&up_color=brightgreen&up_message=online&url=https%3A%2F%2Fnlw-3-discovery.herokuapp.com%2F)</a>
 
 ![](https://i.imgur.com/x3jxxX1.png) 
 
