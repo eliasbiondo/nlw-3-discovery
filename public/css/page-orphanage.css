@@ -263,7 +263,7 @@ hr {
     column-gap: .8rem;
     margin: 1.6rem 4rem 0rem 4rem;
   }
-  .orphanage-name, .orphanage-description, .map-text a, .visit-instructions h2, .visit-instructions p {
+  .orphanage-name, .orphanage-description, .map-text a, .visit-instructions h2 {
     text-align: center;
   }
   .map-text a {
@@ -276,7 +276,31 @@ hr {
     width: 100%;
     margin-bottom: 1rem;
   }
+  .visit-instructions p {
+    margin: 2.4rem 0;
+  }
+
   .weekend-friendly {
     width: 100%;
+  }
+
+  .weekend-friendly.true, .weekend-friendly.false  {
+    width: 100%;
+  }
+  
+  .weekend-friendly img {
+    margin-bottom: 1.6rem;
+  }
+  
+  .weekend-friendly.true p {
+    color: #37c77f;
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  
+  .weekend-friendly.false p {
+    color: #FF669D;
+    font-size: 1.8rem;
+    font-weight: 600;
   }
 }
