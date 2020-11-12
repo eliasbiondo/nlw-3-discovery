@@ -158,4 +158,6 @@ function weekendFriendlyChooseOption(event) {
 
   clickedButton.classList.add("active");
   weekendFriendlyValue.value = clickedButton.value;
+  console.log(weekendFriendlyValue.value)
+  console.log(clickedButton.value)
 }

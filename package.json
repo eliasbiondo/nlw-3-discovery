@@ -4,7 +4,7 @@
   "description": "Nlw Week",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon src/server.js"
+    "start": "node src/server.js"
   },
   "author": "",
   "license": "ISC",
@@ -12,7 +12,6 @@
     "express": "^4.17.1",
     "hbs": "^4.1.1",
     "nodemon": "^2.0.6",
-    "sqlite-async": "^1.1.0",
-    "sqlite3": "^5.0.0"
+    "sqlite-async": "^1.1.0"
   }
 }

@@ -76,7 +76,7 @@
                   <label for="whatsappNumber">Número do WhatsApp</label>
                   <input
                     id="whatsappNumber"
-                    name="whatsappNumber"
+                    name="whatsapp"
                     type="number"
                     required
                   />
@@ -109,12 +109,12 @@
                 
                 <div class="input-block">
                     <label for="visiting-hours">Horários de visita</label>
-                    <input id="visiting-hours" name="visiting-hours" placeholder="Ex.: Das 08:00h às 18:00h"required/>
+                    <input id="visiting-hours" name="visiting_hours" placeholder="Ex.: Das 08:00h às 18:00h" value="" required/>
                 </div>
 
                 <div class="input-block weekend-friendly">
                     <label>Atende aos fins de semana?</label>
-                    <input type="hidden" id="weekend-friendly" name="weekend-friendly" value="1">
+                    <input type="hidden" id="weekend-friendly" name="weekend_friendly" value="1">
 
                     <div class="weekend-friendly-choose-buttons">
                         <button onclick="weekendFriendlyChooseOption(event)" type="button" class="active" value="1">Sim</button>
